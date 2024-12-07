@@ -2,15 +2,15 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/mqrrch/To-Do-List",
+  "homepage": "https://github.com/mqrrch/To-Do-Test",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
